@@ -1,0 +1,442 @@
+
+html, body {
+  font-family: sans-serif;
+  line-height: 1.15;
+  height: 100%;
+}
+
+  /* Centralize content location */
+body {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.5;
+  color: #212529;
+
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Parisienne', cursive, 'Open Sans', sans-serif, 'Roboto'; 
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  text-decoration-skip-ink: none; }
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit; }
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+} 
+
+/* Release background image */
+.hero-image {
+  height: 100vh;
+ 
+  background-image: linear-gradient(220deg, black 1%, transparent, black),
+                    url('../images/490-original.jpg');
+ 
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 24px;
+}
+
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.logo {
+  margin-top: .2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo> h1 { 
+  font-family: 'Parisienne', cursive;  
+  font-size: 1.2em;
+  font-weight: bold;
+  color: lightsteelblue;
+  text-shadow: 1px 1px rgb(4, 56, 56);
+  text-decoration-line: underline;
+}
+
+.logo:hover, 
+.logo:focus {
+  text-decoration: none; 
+}
+
+.menu_navi {
+  float:right;
+   
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.menu_navi {
+  background: coral;
+  position: relative;
+  min-height: 45px;
+  height: 100%;
+}
+
+.menu_navi > ul > li {
+   list-style: none;
+   display: inline-block;
+
+   line-height: 45px;
+}
+
+.menu_navi > ul li a {
+  color: rgb(224, 235, 250);
+  text-decoration: none;
+  display:block;
+  padding: 0px 24px;
+}
+
+.menu_register {
+    background-color: rgb(16, 49, 49);
+/*
+  border-style: ridge; */
+}
+
+/* Primary global navigation bar */
+.fa-bars {
+  position: fixed;
+
+  color: rgb(16, 49, 49);
+  float: right;
+  padding: 20px;
+
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.mwrapper {
+   flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-top: 20px;
+  background: lightslategray;
+  color: black;
+
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+a {
+  color: burlywood;
+}
+
+/*** Set header area **********************/
+.header {
+  position: fixed;
+  width: 100%;
+  /* z-index: 3; */
+  background-color: black; 
+}
+
+.header ul {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  list-style: none;
+  background-color: black; 
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid rgb(16, 49, 49);
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: burlywood;
+  opacity: 50%;
+}
+
+.header li a:hover,
+.header .menu_register:hover {
+  background-color: burlywood;
+  opacity: 50%;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.2em;
+  padding: 10px 30px; 
+  text-decoration: none;
+}
+
+/*** Set Menu Area **********************/
+.fa-bars {
+  position: fixed;
+
+  color: burlywood;
+  float: right;
+  padding: 20px;
+
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*** Show Hamburger menu button  ********/
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 50px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: burlywood;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: burlywood;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/*** Set hamburger menu ***************************/
+.header .menu-btn {
+  display: none;
+}
+
+/* Set maximum height when expanded hamburger menu */
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px; 
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+small {
+  font-size: 80%;
+  font-weight: 400; }
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+blockquote footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d; }
+  blockquote-footer::before {
+    content: "\2014\00A0"; }
+
+/*** Media query: Tablet Portrait and Landscape **********************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero-image {
+    height:80vh;
+  }
+
+  .logo> h1 { 
+    font-size: 1.1em;
+  }
+
+  .header {
+    font-size: 0.9em;
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+}
+
+
+/*** Mobile Portrait and Landscape **********************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) { 
+  .hero-image {
+    height: 33vh;
+  }
+
+  .logo> h1 { 
+    font-size: .9em;
+  }
+
+  .header {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    font-size: 0.7em;
+  }
+}
+
+

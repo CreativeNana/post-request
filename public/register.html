@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Register </title>
+    
+    <!-- Link to the basic CSS files --> 
+    <link rel="stylesheet" href="https://creativenana.github.io/assets/css/v0/reset.css">
+    <link rel="stylesheet" href="https://creativenana.github.io/assets/css/v0/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- Link to the external CSS files: FontAwesome, Google fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Parisienne&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  </head>
+  
+  
+  <body>
+    <div class="wrapper full-vh hero-image">
+      <!-- Primary global navigation menus -->
+      <header class="header">
+        <a class="logo" href="index.html"><h1>Delicacy</h1></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <!-- i class="fa fa-bars fa-3x"></i -->
+        <ul class="menu"> 
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Login</a></li>
+          <li class="menu_register"><a href="register.html">Register</a></li>
+        </ul>
+      </header>
+
+
+      <div class="mwrapper">
+        <section>
+          <div>
+          <h1>Register</h1>
+          <p> Let's start your journey with us</p>
+
+          <div class="flex_wrap">
+            <form action="/users" method="post">
+              <fieldset>
+                <div class="form-group">
+                  <label for="name">Name<h>*</h>:</label>
+                   <input type="text" id="name"  class="input-control" name="name" placeholder="Please input your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="userid">User ID<h>*</h>:</label>
+                   <input type="text" id="userid"  class="input-control" name="userid" placeholder="Please choose your User ID" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail<h>*</h>:</label>
+                   <input type="text" id="email"  class="input-control" name="email" placeholder="Please enter your E-mail address" required>
+                </div>
+    
+                <div class="form-group">
+                  <label for="password">Password<h>*</h>:</label>
+                   <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
+                </div>
+
+                <div>
+                  <button type="submit" id="signUp" class="c_button">Sign Up</button>
+                </div>
+             </fieldset>
+            </form>
+
+          </div>
+        </section>
+      </div>
+
+
+    <footer class="footer">
+      <script>document.write(new Date().getFullYear());</script> @ CreativeNana
+    </footer>
+  </div>
+</body>
+</html>

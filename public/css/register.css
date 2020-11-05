@@ -1,0 +1,266 @@
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: 'Parisienne', cursive, 'Open Sans', sans-serif, 'Roboto'; 
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+  
+  .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  width: 100%;
+  min-height: 100vh;
+} 
+
+/* Set contents position */
+.mwrapper section {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 3%;
+}
+
+/* Decorate the brand name */
+.mwrapper h1 {
+  margin-top: 100px;
+
+  font-family: 'Parisienne', cursive;
+
+  color: orange;
+  font-size: 5em;
+  text-shadow: 3px 3px rgb(4, 56, 56);
+}
+
+.mwrapper p {
+  text-align: center;
+
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: .5em;
+
+  background-color: black;
+  opacity: 70%;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: white;
+  line-height: 200%; 
+}
+
+.mwrapper h3{
+  margin-bottom: 0; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 95%;
+
+  background-color:  rgb(59, 59, 59);
+  opacity: 70%;
+
+  border: 1px solid rgb(59, 59, 59);
+
+  font-size: 1em;
+  color: white;
+}
+
+
+
+/*********************************************/
+/* Decorate the inviting message */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: white;
+  
+  margin: 1em;
+  text-align: center;
+}
+
+
+h {
+  color: red;
+}
+
+/* Fieldset border reset */
+fieldset {
+  border:0;
+}
+
+/* Fieldset area background color */
+form {
+  background-color: black;
+  opacity: 70%;
+}
+ 
+legend {
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: skyblue;
+  font-size: larger;
+
+  margin: 0.5em;
+}
+
+/* form specific formatting */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+  font-weight: lighter; 
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ 
+.form-group label {
+  flex: none;
+  display: block;
+
+  color: white;
+  size: 15ch;
+  margin: 0.5em;
+}
+
+.form-group input {
+  width: 35ch;
+  color: black;
+  margin: 0.5em;
+}
+
+.form-group textarea {
+  width: 35ch;
+  color: black;
+  margin: 0.5em;
+}
+
+.form-group .input-control {
+   flex: 1 1 auto;
+   display: block;
+
+   margin-top: 10px; 
+   margin-bottom: 10px;
+   padding: 4px;
+
+   max-width: 35ch;
+}
+
+/* Submit button */
+.c_button {
+  background-color: goldenrod;
+  border-radius: 5%;
+  border: 1px solid rgb(2, 27, 27);
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+/* Mobile Portrait and Landscape ********************/
+@media only screen and (max-device-width: 767px) { 
+
+ 
+  /* Set contents position */
+  .mwrapper section {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Decorate the brand name */
+  .mwrapper h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px rgb(4, 56, 56);
+  
+    margin-top: 50px;
+  }
+  
+  /* Decorate description of the brand */
+  .mwrapper p {
+    font-size: .7em;
+  }
+  
+  .flex_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .flex_wrap_item img {
+    width: 25ch;
+    height: 25ch;
+    padding-bottom: .5em;
+  }
+  
+  .flex_wrap_item figcaption {
+    font-size: .7em;
+  }
+
+  .flex_wrap_item footer {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* form specific formatting */
+  form {
+    text-align: center;
+  }
+
+  .form-group {
+    justify-content: center;
+
+    width:35ch;
+    margin: 0;
+  }
+  
+  legend {
+    font-size: .9em;
+  }
+
+  .form-group label {
+    size: 15ch;
+    font-size: .9em;
+  }
+
+  .form-group input {
+    width: 30ch;
+    margin: 5px;
+    padding-bottom: 3px;
+  }
+
+  /* Submit button */
+  .c_button {
+    background-color: goldenrod;
+    border-radius: 5%;
+    border: 1px solid rgb(2, 27, 27);
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+}
